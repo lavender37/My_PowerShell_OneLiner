@@ -27,12 +27,16 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 
 #### Check a file for MD5
 
+This Script will open a file dialog then you can select a file for getting MD5 in the terminal
+
 ```PowerShell
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames}; certutil -hashfile $filename MD5
 
 ```
 
 #### Check a file for SHA1
+
+This Script will open a file dialog then you can select a file for getting SHA1 in the terminal
 
 ```PowerShell
 
@@ -41,6 +45,8 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 ```
 
 #### Check a file for SHA256
+
+This Script will open a file dialog then you can select a file for getting SHA256 in the terminal
 
 ```PowerShell
 
