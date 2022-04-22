@@ -14,7 +14,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 
 ## Find in a Directory
 
-#### Find all NULL direcory in a Directory
+#### Find all empty direcory in a Directory
 
 ```PowerShell
 
