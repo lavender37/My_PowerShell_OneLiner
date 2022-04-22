@@ -30,7 +30,7 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 This Script will open a file dialog then you can select a file for getting MD5 in the terminal
 
 ```PowerShell
-[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames}; certutil -hashfile $filename MD5
+[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename MD5}
 
 ```
 
@@ -40,7 +40,7 @@ This Script will open a file dialog then you can select a file for getting SHA1 
 
 ```PowerShell
 
-[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames}; certutil -hashfile $filename SHA1
+[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename SHA1}
 
 ```
 
@@ -50,6 +50,6 @@ This Script will open a file dialog then you can select a file for getting SHA25
 
 ```PowerShell
 
-[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames}; certutil -hashfile $filename SHA256
+[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename SHA256}
 
 ```
