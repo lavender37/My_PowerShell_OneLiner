@@ -78,3 +78,20 @@ This Script will open a file dialog then you can select a file for getting SHA25
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename SHA256}
 
 ```
+
+## Registry Operation
+
+#### copy file path from 
+
+
+# PowerShell_OneLiner based Outside Program
+
+## Find the handle for file or folder
+
+please setting handle.exe in $env:PATH before using the command. [downlaoad from here https://download.sysinternals.com/files/Handle.zip]
+
+```Powershell
+
+handle /path/to/directoryorfile
+
+```
