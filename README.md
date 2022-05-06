@@ -1,6 +1,30 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
 
+check Powershell version
+
+```PowerShell
+
+$PSVersionTable
+
+```
+
+my powershell version
+
+```powershell
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.19041.1645
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.19041.1645
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+```
 
 ## Local Policy for Powershell Scrpit
 
@@ -30,6 +54,7 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 This Script will open a file dialog then you can select a file for getting MD5 in the terminal
 
 ```PowerShell
+
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename MD5}
 
 ```
