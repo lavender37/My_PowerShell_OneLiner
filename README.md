@@ -1,8 +1,6 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
 
-All command is in one line but not single command in one line. 
-
 ⭐ - CMD Compatibility
 
 ⚠️ - Not sure the compatibility for other version
