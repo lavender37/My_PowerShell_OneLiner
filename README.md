@@ -1,9 +1,12 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
-⭐ - CMD usable
-⚠️ - not accessable everywhere
 
-check Powershell version
+⭐ - CMD Compatibility
+
+⚠️ - Not sure the compatibility for other version
+
+
+### check Powershell version
 
 ```PowerShell
 
@@ -11,7 +14,7 @@ $PSVersionTable
 
 ```
 
-my powershell version
+### my powershell version
 
 ```powershell
 
