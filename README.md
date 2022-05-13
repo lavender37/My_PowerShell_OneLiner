@@ -81,8 +81,28 @@ This Script will open a file dialog then you can select a file for getting SHA25
 
 ## Registry Operation
 
-#### copy file path from 
+#### copy file path from Right-Click menu
 
+```
+not ready
+```
+
+## Restart Option[need administrator privilege]
+
+#### restart right now
+```
+shutdown -r -t 0
+```
+
+#### restart for setting bios right now
+```
+shutdown -r -t 1 /fw
+```
+
+#### restart for choosing the advance restart option right now
+```
+shutdown -o -r -t 0
+```
 
 # PowerShell_OneLiner based Outside Program
 
