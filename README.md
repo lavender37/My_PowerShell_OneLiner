@@ -1,5 +1,7 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
+⭐ - CMD usable
+⚠️ - not accessable everywhere
 
 check Powershell version
 
@@ -87,26 +89,26 @@ This Script will open a file dialog then you can select a file for getting SHA25
 not ready
 ```
 
-## Restart Option[need administrator privilege]
+## Restart Option[administrator privilege]
 
-#### restart right now
+#### restart right now ⭐
 ```
 shutdown -r -t 0
 ```
 
-#### restart for setting bios right now
+#### restart for setting bios right now ⭐
 ```
 shutdown -r -t 1 /fw
 ```
 
-#### restart for choosing the advance restart option right now
+#### restart for choosing the advance restart option right now ⭐
 ```
 shutdown -o -r -t 0
 ```
 
 # PowerShell_OneLiner based Outside Program
 
-## Find the handle for file or folder
+## Find the handle for file or folder ⭐
 
 setting handle.exe in $env:PATH before using the command. [downlaoad from here https://download.sysinternals.com/files/Handle.zip]
 
