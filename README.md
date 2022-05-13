@@ -88,7 +88,7 @@ This Script will open a file dialog then you can select a file for getting SHA25
 
 ## Find the handle for file or folder
 
-please setting handle.exe in $env:PATH before using the command. [downlaoad from here https://download.sysinternals.com/files/Handle.zip]
+setting handle.exe in $env:PATH before using the command. [downlaoad from here https://download.sysinternals.com/files/Handle.zip]
 
 ```Powershell
 
