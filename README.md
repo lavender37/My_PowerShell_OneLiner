@@ -109,7 +109,7 @@ shutdown -r -t 1 /fw
 shutdown -o -r -t 0
 ```
 
-# PowerShell_OneLiner based Outside Program
+# PowerShell_OneLiner based on the command line mode of other software
 
 ## Find the handle for file or folder ⭐
 
