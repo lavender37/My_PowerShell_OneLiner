@@ -9,15 +9,12 @@ My collection of PowerShell One-Liners for data processing on Windows.
 ### check Powershell version
 
 ```PowerShell
-
 $PSVersionTable
-
 ```
 
 ### my powershell version
 
 ```powershell
-
 Name                           Value
 ----                           -----
 PSVersion                      5.1.19041.1645
@@ -28,7 +25,6 @@ CLRVersion                     4.0.30319.42000
 WSManStackVersion              3.0
 PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
-
 ```
 
 ## Local Policy for Powershell Scrpit
@@ -36,9 +32,7 @@ SerializationVersion           1.1.0.1
 #### allow local machine Script
 
 ```PowerShell
-
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-
 ```
 
 ## Find in a Directory
@@ -46,9 +40,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 #### Find all empty direcory in a Directory
 
 ```PowerShell
-
 Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFileSystemInfos().Count}
-
 ```
 
 
@@ -59,9 +51,7 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 This Script will open a file dialog then you can select a file for getting MD5 in the terminal
 
 ```PowerShell
-
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename MD5}
-
 ```
 
 #### Check a file for SHA1
@@ -69,9 +59,7 @@ This Script will open a file dialog then you can select a file for getting MD5 i
 This Script will open a file dialog then you can select a file for getting SHA1 in the terminal
 
 ```PowerShell
-
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename SHA1}
-
 ```
 
 #### Check a file for SHA256
@@ -79,9 +67,7 @@ This Script will open a file dialog then you can select a file for getting SHA1 
 This Script will open a file dialog then you can select a file for getting SHA256 in the terminal
 
 ```PowerShell
-
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null;$p = New-Object System.Windows.Forms.OpenFileDialog -Property @{Filter = "All|*.*"}; if($p.ShowDialog() -eq $true){$filename = $p.FileNames; certutil -hashfile $filename SHA256}
-
 ```
 
 ## Registry Operation
@@ -116,7 +102,5 @@ shutdown -o -r -t 0
 setting handle.exe in $env:PATH before using the command. [downlaoad from here https://download.sysinternals.com/files/Handle.zip]
 
 ```Powershell
-
 handle /path/to/directoryorfile
-
 ```
