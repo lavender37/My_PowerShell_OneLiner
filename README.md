@@ -1,9 +1,11 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
 
+Default - Work on Powershel
+
 ⭐ - CMD Compatibility
 
-⚠️ - Not sure the compatibility for other version
+⚠️ - Not sure the compatibility for Powershell with other version
 
 
 ### check Powershell version
