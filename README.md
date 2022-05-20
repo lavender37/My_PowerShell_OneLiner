@@ -42,8 +42,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```PowerShell
 Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFileSystemInfos().Count}
 ```
-
-
+Format the result
+```Powershell
+Get-ChildItem ./ -Recurse -Directory | Where-Object {!$_.GetFileSystemInfos().Count} | Format-Table -Property FullName,LastWriteTime
+```
+Find the file with extension $.tlog$
+```Powershell
+Get-ChildItem ./ -Recurse -Directory | Where-Object {$_.Name -match ".*\.tlog$"} | Format-Table -Property FullName,LastWriteTime
+```
 ## Verify a file
 
 #### Check a file for MD5
