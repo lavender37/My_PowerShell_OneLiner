@@ -37,6 +37,14 @@ SerializationVersion           1.1.0.1
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```
 
+## Install a module
+
+#### install module with proxy
+For unknown reasons, I can't install the Powershell module directly, but it works fine with Proxy, so the command line added
+```
+Install-Module -Name ModuleName -Proxy 'ProxyAddress'
+```
+
 ## Find in a Directory
 
 #### Find all empty direcory in a Directory
