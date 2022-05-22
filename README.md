@@ -120,3 +120,17 @@ setting handle.exe in $env:PATH before using the command. [downlaoad from here h
 ```Powershell
 handle /path/to/directoryorfile
 ```
+
+## Create SFX rar for file or folder ⭐
+
+setting winrar.exe in $env:PATH before using the command. 
+
+for folder
+```
+WinRAR.exe a -sfx'Default.SFX' -p'password;,' -r des.rar ./
+```
+
+for file
+```
+WinRAR.exe a -sfx'Default.SFX' -p'password;,' des.rar ./filename
+```
