@@ -54,11 +54,11 @@ Get-ChildItem /path/to/directory -Recurse -Directory | Where-Object {!$_.GetFile
 ```
 Format the result
 ```Powershell
-Get-ChildItem ./ -Recurse -Directory | Where-Object {!$_.GetFileSystemInfos().Count} | Format-Table -Property FullName,LastWriteTime
+Get-ChildItem ./ -Recurse -Directory | Where-Object {!$_.GetFileSystemInfos().Count} | Format-Table -Property FullName, LastWriteTime
 ```
 Find the file with extension $.tlog$
 ```Powershell
-Get-ChildItem ./ -Recurse -Directory | Where-Object {$_.Name -match ".*\.tlog$"} | Format-Table -Property FullName,LastWriteTime
+Get-ChildItem ./ -Recurse -Directory | Where-Object {$_.Name -match ".*\.tlog$"} | Format-Table -Property FullName, LastWriteTime
 ```
 ## Verify a file
 
@@ -93,7 +93,21 @@ This Script will open a file dialog then you can select a file for getting SHA25
 ```
 not ready
 ```
+## Firewall Operation[administrator privilege]
 
+#### Find all enabled rules
+
+```
+not ready
+```
+
+## Module Installation
+
+#### Install module for current user
+
+```
+Install-Module module_name -Scope CurrentUser
+```
 ## Restart Option[administrator privilege]
 
 #### restart right now ⭐
