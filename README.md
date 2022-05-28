@@ -1,6 +1,8 @@
 # PowerShell_OneLiner
 My collection of PowerShell One-Liners for data processing on Windows.
 
+我发现当需要做一些复杂操作时，限定命令只有一行是困难的，因此在下次或者某个时间，我会添加一些脚本用于辅助。当然，执行时仍然是一行的
+
 Default - Work on Powershel
 
 ⭐ - CMD Compatibility
